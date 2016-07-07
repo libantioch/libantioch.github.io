@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Antioch by libantioch</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Antioch</h1>
+        <p class="header">Antioch: A New Templated Implementation Of Chemistry for Hydrodynamics</p>
+
+
+
+        <ul>
+          <li><a class="buttons github" href="https://github.com/libantioch">GitHub Profile</a></li>
+        </ul>
+
+      </header>
+      <section>
+        <p><a href="https://travis-ci.org/libantioch/antioch"><img src="https://travis-ci.org/libantioch/antioch.png" alt="Build Status"></a></p>
+
+<h1>
+<a id="antioch" class="anchor" href="#antioch" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Antioch</h1>
+
+<p>A New Templated Implementation Of Chemistry for Hydrodynamics (Antioch) was initiated 
+to centralize work by some of the Antioch authors within the realm of hypersonic 
+aerodynamics, based on the <a href="https://github.com/libMesh/libmesh.git">libMesh</a> finite 
+element library. In particular, although there exist C++ chemistry libraries, such 
+as <a href="http://code.google.com/p/cantera/">Cantera</a>, we had needs for both thread-safety 
+and high performance. Thus, Antioch was born. Antioch originally lived within 
+the <a href="http://pecos.ices.utexas.edu">PECOS</a> center at the Institute for Computational 
+Engineering and Sciences (<a href="https://www.ices.utexas.edu">ICES</a>) 
+at <a href="https://www.utexas.edu">The University of Texas at Austin</a>.</p>
+
+<h1>
+<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dependencies</h1>
+
+<h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h2>
+
+<p>Antioch has no required dependencies other than a reasonably modern C++ compiler.</p>
+
+<h2>
+<a id="optional-packages" class="anchor" href="#optional-packages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Optional Packages</h2>
+
+<p>Antioch has been designed to allow several optional packages to facilitate vectorized 
+evaluation of thermochemistry quantities. In particular, Antioch currently can support:</p>
+
+<ol>
+<li>
+<a href="https://github.com/ddemidov/vexcl.git">VexCL</a> - This package will enable GPU offload capabilities</li>
+<li>
+<a href="http://eigen.tuxfamily.org">Eigen</a> - Highly optimized vector and matrix types</li>
+</ol>
+
+<h1>
+<a id="building-antioch" class="anchor" href="#building-antioch" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Building Antioch</h1>
+
+<p>Antioch uses an Autotools build system, so typical GNU build commands are used.</p>
+
+<ol>
+<li>./bootstrap (generate configure script)</li>
+<li>./configure --prefix=/path/to/install (for more options, do ./configure --help)</li>
+<li>make (note parallel builds are supported)</li>
+<li>make check (note parallel-tests are supported)</li>
+<li>make install</li>
+</ol>
+
+<h1>
+<a id="discussion-and-development" class="anchor" href="#discussion-and-development" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Discussion and Development</h1>
+
+<p>Pull Requests for bug fixes and new features are welcome. Mailing lists have been setup for
+user questions and discussion (<a href="mailto:antioch-users@googlegroups.com">antioch-users@googlegroups.com</a>) as well as development questions
+and discussion (<a href="mailto:antioch-devel@googlegroups.com">antioch-devel@googlegroups.com</a>).</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
